@@ -1,0 +1,5 @@
+##Put Item
+aws --region ap-southeast-2 dynamodb put-item --table-name test-table --item '{ "username": { "S": "Yotta" }, "code": {"S": "123456"}, "expires_at":{"S": "1537742586"}, "is_valid":{"BOOL": true} }'
+
+##Scan table
+aws --region ap-southeast-2  dynamodb scan --table-name test-table
